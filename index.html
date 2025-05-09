@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citações de Anime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Citações de Anime</h1>
+            <p class="subtitle">Descubra frases inspiradoras dos seus personagens favoritos</p>
+        </header>
+
+        <div id="quote-container" class="quote-card" style="display: none;">
+            <p id="quote-content" class="quote-content"></p>
+            <div class="quote-info">
+                <div class="anime-info">
+                    <span class="label">Anime</span>
+                    <span id="anime-name" class="value"></span>
+                    <span id="anime-alt-name" class="alt-name"></span>
+                </div>
+                <div class="character-info">
+                    <span class="label">Personagem</span>
+                    <span id="character-name" class="value"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="loading">Carregando citação...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <button id="new-quote" class="btn">Nova Citação</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
